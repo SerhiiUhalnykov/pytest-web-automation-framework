@@ -1,1 +1,9 @@
+.env
 .venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+allure-report/
+allure-results/
+test-results/
+playwright-report/
