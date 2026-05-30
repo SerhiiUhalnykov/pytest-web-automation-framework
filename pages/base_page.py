@@ -1,13 +1,13 @@
 import allure
 from playwright.sync_api import Page
 
-from utils.config import URL
+from utils.config import BASE_URL
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
 
 class BasePage:
-    BASE_URL: str = URL
+    BASE_URL: str = BASE_URL
     PATH: str = ""
 
     def __init__(self, page: Page) -> None:

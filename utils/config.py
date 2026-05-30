@@ -4,6 +4,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-URL: str = os.getenv("URL", "")
-USERNAME: str = os.getenv("USERNAME", "")
-PASSWORD: str = os.getenv("PASSWORD", "")
+BASE_URL: str = os.getenv("BASE_URL", "")
+
+class Users:
+    STAN_USER: str = os.getenv("USER_STAN", "")
+    STAN_PASS: str = os.getenv("PASS_STAN", "")
+
+    ADMIN_USER: str = os.getenv("USER_ADMIN", "")
+    ADMIN_PASS: str = os.getenv("PASS_ADMIN", "")
