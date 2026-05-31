@@ -32,7 +32,6 @@ def test_full_login_logout_valid(page: Page) -> None:
     secure_pg.check_success_popup()
 
     secure_pg.logout()
-    login_pg = LoginPage(page)
     login_pg.assert_url()
     login_pg.should_be_loaded()
 
