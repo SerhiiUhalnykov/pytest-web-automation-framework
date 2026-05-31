@@ -17,40 +17,47 @@ INVALID_PASS_CASES = [
     pytest.param(Users.STAN_USER, "wrongpass", id="wrong-pass"),
 ]
 
-@allure.severity(allure.severity_level.CRITICAL)
-@pytest.mark.smoke
-def test_full_login_logout_valid(page: Page) -> None:
+@allure.feature("Authentication")
+@allure.story("Login page behavior")
+class TestLogin:
 
-    login_pg = LoginPage(page)
-    login_pg.open()
-    login_pg.should_be_loaded()
+    @allure.severity(allure.severity_level.CRITICAL)
+    @pytest.mark.smoke
+    @pytest.mark.regression
+    def test_full_login_logout_valid(self, page: Page) -> None:
+
+        login_pg = LoginPage(page)
+        login_pg.open()
+        login_pg.should_be_loaded()
+            
+        login_pg.login(Users.STAN_USER, Users.STAN_PASS)
+        secure_pg = SecurePage(page)
+        secure_pg.assert_url()
+        secure_pg.should_be_loaded()
+        secure_pg.check_success_popup()
+
+        secure_pg.logout()
+        login_pg.assert_url()
+        login_pg.should_be_loaded()
+
+    @pytest.mark.parametrize("username,password", INVALID_LOGIN_CASES)
+    @pytest.mark.regression
+    def test_login_invalid_username(self, page: Page, username: str, password: str):
+
+        login_pg = LoginPage(page)
+        login_pg.open()
+        login_pg.should_be_loaded()
+
+        login_pg.login(username, password)
+        login_pg.check_invalid_user_err()
+
+    @pytest.mark.parametrize("username,password", INVALID_PASS_CASES)
+    @pytest.mark.regression
+    def test_login_invalid_password(self, page: Page, username: str, password: str): 
         
-    login_pg.login(Users.STAN_USER, Users.STAN_PASS)
-    secure_pg = SecurePage(page)
-    secure_pg.assert_url()
-    secure_pg.should_be_loaded()
-    secure_pg.check_success_popup()
+        login_pg = LoginPage(page)
+        login_pg.open()
+        login_pg.should_be_loaded()
 
-    secure_pg.logout()
-    login_pg.assert_url()
-    login_pg.should_be_loaded()
-
-@pytest.mark.parametrize("username,password", INVALID_LOGIN_CASES)
-def test_login_invalid_username(page: Page, username: str, password: str):
-
-    login_pg = LoginPage(page)
-    login_pg.open()
-    login_pg.should_be_loaded()
-
-    login_pg.login(username, password)
-    login_pg.check_invalid_user_err()
-
-@pytest.mark.parametrize("username,password", INVALID_PASS_CASES)
-def test_login_invalid_password(page: Page, username: str, password: str): 
-    
-    login_pg = LoginPage(page)
-    login_pg.open()
-    login_pg.should_be_loaded()
-
-    login_pg.login(username, password)
-    login_pg.check_invalid_pass_err()
+        login_pg.login(username, password)
+        login_pg.check_invalid_pass_err()
