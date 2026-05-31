@@ -2,6 +2,9 @@ import allure
 from playwright.sync_api import Page, expect
 
 from pages.base_page import BasePage
+from utils.logger import get_logger
+
+logger = get_logger(__name__)
 
 class LoginPage(BasePage):
     PATH: str = "/login"
@@ -27,6 +30,7 @@ class LoginPage(BasePage):
     
     @allure.step("Perfom Login")
     def login(self, username: str, password: str) -> None:
+        logger.info("Logging into secure page")
         
         self._username_input.fill(username)
         self._password_input.fill(password)

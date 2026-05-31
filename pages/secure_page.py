@@ -2,6 +2,9 @@ import allure
 from playwright.sync_api import Page, expect
 
 from pages.base_page import BasePage
+from utils.logger import get_logger
+
+logger = get_logger(__name__)
 
 class SecurePage(BasePage):
     PATH: str = "/secure"
@@ -28,5 +31,6 @@ class SecurePage(BasePage):
 
     @allure.step("Perform logout")
     def logout(self) -> None:
-
+        logger.info("Logging out from secure page")
+        
         self._logout_btn.click()

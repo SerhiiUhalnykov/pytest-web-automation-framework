@@ -11,13 +11,13 @@ class BasePage:
     PATH: str = ""
 
     def __init__(self, page: Page) -> None:
-        logger.info(f"Initializaing {self.__class__.__name__}")
+        logger.info(f"Initializing {self.__class__.__name__} with URL: {self._url}")
         
         self._page: Page = page
 
     @property
     def _url(self) -> str:
-        
+
         return self.BASE_URL + self.PATH
 
     def open(self) -> None:
