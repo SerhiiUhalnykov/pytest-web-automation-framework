@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+ARTIFACTS_DIR: str = os.getenv("ARTIFACTS_DIR", "artifacts")
+
 BASE_URL: str = os.getenv("BASE_URL", "")
 
 class Users:
