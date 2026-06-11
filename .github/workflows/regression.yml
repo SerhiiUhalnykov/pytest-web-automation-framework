@@ -1,11 +1,8 @@
 name: Regression night tests
 
 on:
-  push:
-    branches:
-      - ci/nightly-tests
-  # schedule:
-  #   - cron: "0 0 * * *"
+  schedule:
+    - cron: "15 15 * * *"
 
 jobs:
   run_tests:
