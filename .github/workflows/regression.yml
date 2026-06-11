@@ -1,0 +1,85 @@
+name: Regression night tests
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright
+        run: python -m playwright install --with-deps
+
+      - name: Create .env for variables
+        run: echo "${{ vars.ENV_FILE }}" > .env
+
+      - name: Run regression tests
+        env:
+          BROWSER: ${{ matrix.browser }}
+        run: pytest -m regression --alluredir=allure-results
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-artifacts-${{ matrix.browser }}
+          path: |
+            artifacts
+            allure-results
+
+  merge_results:
+    if: always()
+    needs: [run_tests]
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: test-artifacts
+
+      - name: Merge into one dir
+        run: |
+          mkdir merged-results
+          find test-artifacts -type f -path "*/allure-results/*" -exec cp {} merged-results/ \;
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Install Allure
+        run: npm install -g allure-commandline
+
+      - name: Merge Allure results
+        run: npx allure generate merged-results -o allure-report --clean
+
+      - name: Upload Allure report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
