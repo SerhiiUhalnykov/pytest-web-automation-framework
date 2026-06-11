@@ -76,8 +76,7 @@ jobs:
         run: npm install -g allure-commandline
 
       - name: Merge Allure results
-        run: |
-          allure generate merged-results -o allure-report --clean
+        run: npx allure generate merged-results -o allure-report --clean
 
       - name: Upload Allure report
         if: always()
