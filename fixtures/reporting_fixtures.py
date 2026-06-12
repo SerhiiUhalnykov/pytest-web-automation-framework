@@ -12,8 +12,9 @@ logger = get_logger(__name__)
 
 
 @pytest.fixture(autouse=True)
-def allure_browser_label() -> None:
+def allure_browser_markings() -> None:
     allure.dynamic.parameter("browser", BROWSER_NAME)
+    allure.dynamic.parent_suite(BROWSER_NAME.upper())
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
