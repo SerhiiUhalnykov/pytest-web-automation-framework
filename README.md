@@ -1,5 +1,7 @@
 # QA-Automation-Portfolio
-[![Smoke tests](https://github.com/SerhiiUhalnykov/qa-automation-portfolio/actions/workflows/tests.yml/badge.svg)](https://github.com/SerhiiUhalnykov/qa-automation-portfolio/actions/workflows/tests.yml)
+[![Smoke tests](https://github.com/SerhiiUhalnykov/qa-automation-portfolio/actions/workflows/smoke.yml/badge.svg)](https://github.com/SerhiiUhalnykov/qa-automation-portfolio/actions/workflows/smoke.yml)
+
+[![Regression tests](https://github.com/SerhiiUhalnykov/qa-automation-portfolio/actions/workflows/regression.yml/badge.svg)](https://github.com/SerhiiUhalnykov/qa-automation-portfolio/actions/workflows/regression.yml)
 
 ![Python](https://img.shields.io/badge/python-3.1x-blue)
 ![Pytest](https://img.shields.io/badge/pytest-9.x-green)
@@ -7,10 +9,8 @@
 ![Allure](https://img.shields.io/badge/allure-reporting-orange)
 
 ## 📌 Overview
-UI automation framework using:
-- Playwright
-- pytest
-- Allure reporting
+UI automation framework using Playwright with pytest and Allure for reporting
+on a public website ![herokuapp](https://the-internet.herokuapp.com) as a test subject.
 
 ## ⚙️ Tech Stack
 - Python 3.10+
@@ -23,19 +23,22 @@ UI automation framework using:
 ```bash
 git clone <repo>
 cd project
-
+# Python virtual environment
 python -m venv .venv
 source .venv/bin/activate
-
+# Python dependencies
 pip install -r requirements.txt
-
-playwright install
-npm install allure-commandline --save-dev
+# Playwright browsers
+python -m playwright install --with-deps
+# Node dependencies (Allure)
+npm ci
+# Create and fill file for env variables
+cp .env.example .env
 ```
 
 ## ▶️ Running Tests
 ```bash
-pytest
+pytest --alluredir=allure-results
 ```
 ## 📊 Allure Reports
 ```bash
@@ -45,16 +48,20 @@ npx allure serve allure-results
 <!-- ## 🧪 Test Structure -->
 ## 📁 Project Structure
 ```
-├── pages/          # page objects
-├── tests/          # test cases
-├── utils/          # helper modules
+├── .github
+│   └─── workflows    # ci pipelines
+│
+├── fixtures/         # separated fixtures
+├── pages/            # page objects
+├── tests/            # test cases
+├── utils/            # helper modules
 |
-├── allure-report/  # generated Allure HTML report
-├── allure-results/ # generated Allure raw results
-├── artifacts/      # generated for screenshots/traces on fail
+├── allure-report/    # generated Allure HTML report
+├── allure-results/   # generated Allure raw results
+├── artifacts/        # generated for screenshots/traces on fail
 |
-├── conftest.py     # shared pytest fixtures/hooks
-├── pytest.ini      # pytest config
+├── conftest.py       # shared pytest fixtures/hooks
+├── pytest.ini        # pytest config
 ```
 ## 🐞 Debugging
 
@@ -67,20 +74,17 @@ If test fails:
 
 ## 🔄 CI/CD
 
-The project uses GitHub Actions to automatically validate changes on every push and pull request.
+The project uses GitHub Actions for automated testing and reporting.
 
-### Pipeline
+### Workflows
+* Pull Requests / Push to main
+    * Runs smoke tests
+    * Executes Playwright tests (Chromium)
+    * Generates test artifacts on fail and allure results
+* Nightly Regression
+    * Runs full regression suite on schedule
+    * Executes cross-browser matrix (Chromium, Firefox, WebKit)
+    * Generates and merges Allure reports
 
-1. Checkout repository
-2. Set up Python environment
-3. Install project dependencies
-4. Install Playwright browsers
-5. Run smoke tests
-6. Collect Allure results
-7. Upload test artifacts
-
-### Artifacts on Failure
-
-- Playwright screenshots
-- Playwright traces
-- Allure test results
+### Environment Setup
+Configuration is managed via .env locally and GitHub Actions variables in CI.
