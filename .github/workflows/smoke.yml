@@ -43,3 +43,4 @@ jobs:
           path: |
             artifacts
             allure-results
+          retention-days: 7
