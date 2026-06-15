@@ -29,8 +29,8 @@ class SecurePage(BasePage):
     @allure.step("Check the success popup visibility")
     def assert_success_popup(self) -> None:
 
-        expect(self._success_popup).to_contain_text("You logged into a secure area")
         expect(self._success_popup).to_be_visible()
+        expect(self._success_popup).to_contain_text("You logged into a secure area")
 
     @allure.step("Perform logout")
     def logout(self) -> None:
