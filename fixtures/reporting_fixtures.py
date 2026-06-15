@@ -68,7 +68,8 @@ def save_attach_results(
     yield
     # NOTE: the fixture controls test context object tracing stoppage
     # since stopping tracing and saving the file cannot be separated.
-    if request.node.rep_call.failed:
+    rep_call = getattr(request.node, "rep_call", None)
+    if rep_call and rep_call.failed:
         screenshot_path = artifacts_path["screenshot"]
         trace_path = artifacts_path["trace"]
         logger.info(
