@@ -1,0 +1,6 @@
+2026-06-18 06:02:30,791 | INFO | fixtures.reporting_fixtures | Artifacts dir: artifacts/webkit
+2026-06-18 06:02:31,109 | INFO | conftest | Initiating browser session using webkit
+2026-06-18 06:02:35,709 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-06-18 06:02:37,249 | INFO | pages.login_page | Logging into secure page
+2026-06-18 06:02:37,924 | INFO | pages.base_page | Initializing SecurePage with URL: https://the-internet.herokuapp.com/secure
+2026-06-18 06:02:38,001 | INFO | pages.secure_page | Logging out from secure page
