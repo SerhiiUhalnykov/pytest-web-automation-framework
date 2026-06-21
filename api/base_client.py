@@ -9,40 +9,46 @@ logger = get_logger(__name__)
 
 
 class BaseClient:
-    def __init__(self, base_url: str = API_URL) -> None:
-        self.base_url = base_url
+    BASE_URL: str = API_URL
+    CLIENT_PATH: str = ""
+
+    def __init__(self) -> None:
         self.session = requests.Session()
         self.last_response: requests.Response | None = None
 
         logger.info(
-            f"Initializing {self.__class__.__name__} with URL: {self.base_url}"
+            f"Initializing {self.__class__.__name__} with URL: {self.client_url}"
         )
+
+    @property
+    def client_url(self) -> str:
+        return f"{self.BASE_URL}{self.CLIENT_PATH}"
 
     @allure.step("Perform GET request")
     def get(self, path: str, **kwargs) -> requests.Response:
         self.last_response = self.session.get(
-            f"{self.base_url}{path}", **kwargs
+            f"{self.client_url}{path}", **kwargs
         )
         return self.last_response
 
     @allure.step("Perform POST request")
     def post(self, path: str, **kwargs) -> requests.Response:
         self.last_response = self.session.post(
-            f"{self.base_url}{path}", **kwargs
+            f"{self.client_url}{path}", **kwargs
         )
         return self.last_response
 
     @allure.step("Perform PUT request")
     def put(self, path: str, **kwargs) -> requests.Response:
         self.last_response = self.session.put(
-            f"{self.base_url}{path}", **kwargs
+            f"{self.client_url}{path}", **kwargs
         )
         return self.last_response
 
     @allure.step("Perform DELETE request")
     def delete(self, path: str, **kwargs) -> requests.Response:
         self.last_response = self.session.delete(
-            f"{self.base_url}{path}", **kwargs
+            f"{self.client_url}{path}", **kwargs
         )
         return self.last_response
 

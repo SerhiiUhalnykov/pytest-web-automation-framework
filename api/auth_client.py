@@ -6,9 +6,7 @@ from api.base_client import BaseClient
 
 
 class AuthClient(BaseClient):
-    def __init__(self) -> None:
-        super().__init__()
-        self.base_url += "/auth"
+    CLIENT_PATH: str = "/auth"
 
     @allure.step("Perform Login")
     def login(self, username: str, password: str) -> requests.Response:
