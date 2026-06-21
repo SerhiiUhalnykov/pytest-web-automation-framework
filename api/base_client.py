@@ -48,7 +48,7 @@ class BaseClient:
 
     @allure.step("Authorize client session")
     def authorize_session(self, token: str) -> None:
-        self.session.headers.update({"Authorization": f"Brearer {token}"})
+        self.session.headers.update({"Authorization": f"Bearer {token}"})
 
     def close(self) -> None:
         self.session.close()
