@@ -2,6 +2,7 @@ import pytest
 import allure
 
 from api.auth_client import AuthClient
+from api.user_client import UserClient
 from models.base import ErrorResponse
 from models.auth import LoginResponse
 from models.user import UserResponse
@@ -14,7 +15,7 @@ from utils.assertions import (
 
 
 @allure.feature("Authentication")
-@allure.story("API login behavior")
+@allure.story("API login")
 @pytest.mark.api
 @pytest.mark.regression
 class TestLogin:
@@ -36,13 +37,13 @@ class TestLogin:
 
 
 @allure.feature("Authentication")
-@allure.story("API get current user by token behavior")
+@allure.story("API get current user info by token")
 @pytest.mark.api
 @pytest.mark.regression
 class TestGetAuthUser:
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
-    def test_curr_user_valid(self, auth_client: AuthClient) -> None:
+    def test_auth_me_endpoint_valid(self, auth_client: AuthClient) -> None:
         token = auth_client.get_user_token(Users.API_USER, Users.API_PASS)
         response = auth_client.get_auth_user(token)
 
@@ -50,7 +51,15 @@ class TestGetAuthUser:
         parsed = assert_valid_schema(response.json(), UserResponse)
         assert_valid_field(parsed, "username", Users.API_USER)
 
-    def test_curr_user_invalid(self, auth_client: AuthClient) -> None:
+    def test_user_me_endpoint_valid(
+        self, authed_user_client: UserClient
+    ) -> None:
+        response = authed_user_client.get_auth_user()
+
+        assert_status_code(response.status_code, 200)
+        assert_valid_schema(response.json(), UserResponse)
+
+    def test_auth_me_endpoint_invalid(self, auth_client: AuthClient) -> None:
         response = auth_client.get_auth_user("")
 
         assert_status_code(response.status_code, 401)
