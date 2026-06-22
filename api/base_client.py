@@ -25,7 +25,7 @@ class BaseClient:
         return f"{self.BASE_URL}{self.CLIENT_PATH}"
 
     @allure.step("Perform GET request")
-    def get(self, path: str, **kwargs) -> requests.Response:
+    def get(self, path: str = "", **kwargs) -> requests.Response:
         self.last_response = self.session.get(
             f"{self.client_url}{path}", **kwargs
         )
