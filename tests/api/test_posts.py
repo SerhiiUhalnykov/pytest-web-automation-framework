@@ -53,6 +53,7 @@ class TestGetPosts:
         assert_valid_field(
             parsed, "message", f"Post with id '{post_id}' not found"
         )
+        assert False
 
 
 @allure.feature("Posts")

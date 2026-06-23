@@ -24,7 +24,7 @@ class TestLogin:
     def test_login_valid(self, auth_client: AuthClient) -> None:
         response = auth_client.login(Users.API_USER, Users.API_PASS)
 
-        assert_status_code(response.status_code, 200)
+        assert_status_code(response.status_code, 999)
         parsed = assert_valid_schema(response.json(), LoginResponse)
         assert_valid_field(parsed, "username", Users.API_USER)
 
