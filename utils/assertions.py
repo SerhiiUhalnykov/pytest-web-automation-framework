@@ -1,6 +1,7 @@
 from typing import TypeVar, Any
 
 import allure
+import requests
 from pydantic import BaseModel
 
 T = TypeVar("T", bound=BaseModel)
@@ -32,3 +33,13 @@ def assert_response_contains_payload(
         assert body.get(key) == value, (
             f"{key}: expected {value!r}, got {body.get(key)!r}"
         )
+
+
+@allure.step("Validate response time")
+def assert_response_time(
+    response: requests.Response, max_seconds: float = 2.0
+) -> None:
+    actual_time = response.elapsed.total_seconds()
+    assert actual_time <= max_seconds, (
+        f"Actual response time {actual_time:.2f}s, expected under {max_seconds}s"
+    )
