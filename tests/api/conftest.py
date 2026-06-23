@@ -53,11 +53,13 @@ def save_attach_results(
 ) -> Iterator[None]:
 
     yield
-
     rep_call = getattr(request.node, "rep_call", None)
     if rep_call and rep_call.failed:
         for value in request.node.funcargs.values():
-            if isinstance(value, BaseClient) and value.last_response:
+            if (
+                isinstance(value, BaseClient)
+                and value.last_response is not None
+            ):
                 response_path = artifacts_path["json"]
 
                 logger.info(
