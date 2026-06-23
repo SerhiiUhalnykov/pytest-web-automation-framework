@@ -1,1 +1,0 @@
-2026-06-13 16:43:26,487 | INFO | pages.base_page | Initializing MainPage with URL: https://the-internet.herokuapp.com/
