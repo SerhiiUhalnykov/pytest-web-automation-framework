@@ -8,6 +8,7 @@ import allure
 from api.auth_client import AuthClient
 from api.base_client import BaseClient
 from api.user_client import UserClient
+from api.posts_client import PostsClient
 from utils.logger import get_logger
 from utils.config import Users
 
@@ -38,9 +39,25 @@ def auth_client() -> Iterator[AuthClient]:
 
 
 @pytest.fixture
+def posts_client() -> Iterator[PostsClient]:
+    client = PostsClient()
+    yield client
+    client.close()
+
+
+@pytest.fixture
 def authed_user_client(auth_client: AuthClient) -> Iterator[UserClient]:
     token = auth_client.get_user_token(Users.API_USER, Users.API_PASS)
     client = UserClient()
+    client.authorize_session(token)
+    yield client
+    client.close()
+
+
+@pytest.fixture
+def authed_posts_client(auth_client: AuthClient) -> Iterator[PostsClient]:
+    token = auth_client.get_user_token(Users.API_USER, Users.API_PASS)
+    client = PostsClient()
     client.authorize_session(token)
     yield client
     client.close()
