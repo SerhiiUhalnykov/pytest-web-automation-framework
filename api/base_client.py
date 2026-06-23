@@ -45,6 +45,13 @@ class BaseClient:
         )
         return self.last_response
 
+    @allure.step("Perform PATCH request")
+    def patch(self, path: str, **kwargs) -> requests.Response:
+        self.last_response = self.session.patch(
+            f"{self.client_url}{path}", **kwargs
+        )
+        return self.last_response
+
     @allure.step("Perform DELETE request")
     def delete(self, path: str, **kwargs) -> requests.Response:
         self.last_response = self.session.delete(
