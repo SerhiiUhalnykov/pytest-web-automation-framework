@@ -29,6 +29,7 @@ class BasePage:
     def open(self) -> None:
         """Navigate to this page's URL."""
 
+        logger.info(f"Opening {self._url}")
         with allure.step(f"Open page {self.__class__.__name__}"):
             self._page.goto(self._url)
 
