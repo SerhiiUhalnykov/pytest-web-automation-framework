@@ -2,6 +2,8 @@ from models.base import NonEmptyBaseModel
 
 
 class UserResponse(NonEmptyBaseModel):
+    """Response body for a user profile."""
+
     _check_non_empty = {
         "id",
         "firstName",

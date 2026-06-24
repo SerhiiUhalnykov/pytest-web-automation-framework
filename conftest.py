@@ -11,7 +11,7 @@ logger = get_logger(__name__)
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item: pytest.Item):
-    """Hook that generates a report status each test for failure handling"""
+    """Hook that generates a report status each test for failure handling."""
 
     outcome = yield
     report: pytest.TestReport = outcome.get_result()
@@ -20,7 +20,7 @@ def pytest_runtest_makereport(item: pytest.Item):
 
 @pytest.fixture(scope="module")
 def artifacts_dir(artifacts_subdir: str) -> Path:
-    """Create a directory to store test artifacts"""
+    """Create a directory to store test artifacts."""
 
     art_dir = Path(settings.artifacts_dir) / artifacts_subdir
     art_dir.mkdir(parents=True, exist_ok=True)
@@ -35,7 +35,7 @@ def artifacts_path(
     artifact_extensions: list[str],
     request: pytest.FixtureRequest,
 ) -> dict[str, Path]:
-    """Create names and paths for test artifacts"""
+    """Create names and paths for test artifacts."""
 
     name = request.node.name
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

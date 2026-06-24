@@ -13,17 +13,23 @@ logger = get_logger(__name__)
 
 @pytest.fixture(autouse=True)
 def allure_markings() -> None:
+    """Tag each test with the current browser as an Allure parameter."""
+
     allure.dynamic.parameter("browser", settings.browser)
     allure.dynamic.parent_suite(settings.browser.upper())
 
 
 @pytest.fixture(scope="session")
 def artifacts_subdir() -> str:
+    """Return the browser name as the UI artifacts subdirectory."""
+
     return settings.browser
 
 
 @pytest.fixture(scope="session")
 def artifact_extensions() -> list[str]:
+    """Return file extensions saved on UI test failure."""
+
     return ["zip", "png"]
 
 

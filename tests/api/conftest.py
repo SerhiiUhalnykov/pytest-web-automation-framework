@@ -17,22 +17,30 @@ logger = get_logger(__name__)
 
 @pytest.fixture(autouse=True)
 def allure_markings() -> None:
+    """Tag each test with 'api' as the Allure environment parameter."""
+
     allure.dynamic.parameter("environment", "api")
     allure.dynamic.parent_suite("API")
 
 
 @pytest.fixture(scope="session")
 def artifacts_subdir() -> str:
+    """Return 'api' as the API artifacts subdirectory."""
+
     return "api"
 
 
 @pytest.fixture(scope="session")
 def artifact_extensions() -> list[str]:
+    """Return file extensions saved on API test failure."""
+
     return ["json"]
 
 
 @pytest.fixture
 def auth_client() -> Iterator[AuthClient]:
+    """Yield an AuthClient instance, closed after each test."""
+
     client = AuthClient()
     yield client
     client.close()
@@ -40,6 +48,8 @@ def auth_client() -> Iterator[AuthClient]:
 
 @pytest.fixture
 def posts_client() -> Iterator[PostsClient]:
+    """Yield a PostsClient instance, closed after each test."""
+
     client = PostsClient()
     yield client
     client.close()
@@ -47,6 +57,8 @@ def posts_client() -> Iterator[PostsClient]:
 
 @pytest.fixture
 def authed_user_client(auth_client: AuthClient) -> Iterator[UserClient]:
+    """Yield a UserClient pre-authorized with the API user token."""
+
     token = auth_client.get_user_token(Users.API.username, Users.API.password)
     client = UserClient()
     client.authorize_session(token)
@@ -56,6 +68,8 @@ def authed_user_client(auth_client: AuthClient) -> Iterator[UserClient]:
 
 @pytest.fixture
 def authed_posts_client(auth_client: AuthClient) -> Iterator[PostsClient]:
+    """Yield a PostsClient pre-authorized with the API user token."""
+
     token = auth_client.get_user_token(Users.API.username, Users.API.password)
     client = PostsClient()
     client.authorize_session(token)
@@ -68,6 +82,7 @@ def save_attach_results(
     request: pytest.FixtureRequest,
     artifacts_path: dict[str, Path],
 ) -> Iterator[None]:
+    """Save last API response as a JSON artifact on test failure."""
 
     yield
     rep_call = getattr(request.node, "rep_call", None)

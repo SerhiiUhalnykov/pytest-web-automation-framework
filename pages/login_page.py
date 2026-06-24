@@ -8,6 +8,8 @@ logger = get_logger(__name__)
 
 
 class LoginPage(BasePage):
+    """Page object for the /login page."""
+
     PATH: str = "/login"
 
     def __init__(self, page: Page) -> None:
@@ -23,6 +25,7 @@ class LoginPage(BasePage):
 
     @allure.step("Check login page is loaded")
     def assert_loaded(self) -> None:
+        """Assert all login form elements are visible."""
 
         expect(self._heading).to_be_visible()
         expect(self._username_input).to_be_visible()
@@ -31,6 +34,8 @@ class LoginPage(BasePage):
 
     @allure.step("Perform Login")
     def login(self, username: str, password: str) -> None:
+        """Fill credentials and submit the login form."""
+
         logger.info("Logging into secure page")
 
         self._username_input.fill(username)
@@ -39,12 +44,14 @@ class LoginPage(BasePage):
 
     @allure.step("Check invalid username error visibility")
     def assert_invalid_user_err(self) -> None:
+        """Assert the invalid username flash message is visible."""
 
         expect(self._invalid_err).to_contain_text("Your username is invalid!")
         expect(self._invalid_err).to_be_visible()
 
     @allure.step("Check invalid password error visibility")
     def assert_invalid_pass_err(self) -> None:
+        """Assert the invalid password flash message is visible."""
 
         expect(self._invalid_err).to_contain_text("Your password is invalid!")
         expect(self._invalid_err).to_be_visible()

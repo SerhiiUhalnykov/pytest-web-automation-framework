@@ -3,10 +3,14 @@ from pydantic import BaseModel, model_validator
 
 
 class NonEmptyBaseModel(BaseModel):
+    """Pydantic model that validates _check_non_empty fields are not blank."""
+
     _check_non_empty: ClassVar[set[str]] = set()
 
     @model_validator(mode="after")
     def check_non_empty_fields(self) -> "NonEmptyBaseModel":
+        """Raise AssertionError if any _check_non_empty field is empty."""
+
         for field in self._check_non_empty:
             value = getattr(self, field)
             assert value not in (None, "", [], {}), (
@@ -16,6 +20,8 @@ class NonEmptyBaseModel(BaseModel):
 
 
 class ErrorResponse(NonEmptyBaseModel):
+    """Standard error response body returned by the API."""
+
     _check_non_empty = {"message"}
 
     message: str

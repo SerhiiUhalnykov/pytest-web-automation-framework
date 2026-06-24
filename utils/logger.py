@@ -2,6 +2,8 @@ import logging
 
 
 def get_logger(name: str) -> logging.Logger:
+    """Return a named logger with a timestamp formatter and stream handler."""
+
     logger = logging.getLogger(name)
 
     if not logger.handlers:

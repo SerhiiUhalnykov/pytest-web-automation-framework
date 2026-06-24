@@ -8,6 +8,8 @@ logger = get_logger(__name__)
 
 
 class BasePage:
+    """Base page object with URL navigation and assertion helpers."""
+
     BASE_URL: str = settings.base_url
     PATH: str = ""
 
@@ -20,15 +22,18 @@ class BasePage:
 
     @property
     def _url(self) -> str:
+        """Full URL for this page."""
 
         return self.BASE_URL + self.PATH
 
     def open(self) -> None:
+        """Navigate to this page's URL."""
 
         with allure.step(f"Open page {self.__class__.__name__}"):
             self._page.goto(self._url)
 
     def assert_url(self) -> None:
+        """Assert the browser is currently at this page's URL."""
 
         with allure.step(f"Check page {self.__class__.__name__} url"):
             expect(self._page).to_have_url(self._url)

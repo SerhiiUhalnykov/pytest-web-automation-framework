@@ -9,6 +9,8 @@ logger = get_logger(__name__)
 
 
 class BaseClient:
+    """Base HTTP client using requests.Session; subclasses add endpoints."""
+
     BASE_URL: str = settings.api_url
     CLIENT_PATH: str = ""
 
@@ -22,10 +24,14 @@ class BaseClient:
 
     @property
     def client_url(self) -> str:
+        """Full base URL for this client."""
+
         return f"{self.BASE_URL}{self.CLIENT_PATH}"
 
     @allure.step("Perform GET request")
     def get(self, path: str = "", **kwargs) -> requests.Response:
+        """Send a GET request to client_url + path."""
+
         self.last_response = self.session.get(
             f"{self.client_url}{path}", **kwargs
         )
@@ -33,6 +39,8 @@ class BaseClient:
 
     @allure.step("Perform POST request")
     def post(self, path: str, **kwargs) -> requests.Response:
+        """Send a POST request to client_url + path."""
+
         self.last_response = self.session.post(
             f"{self.client_url}{path}", **kwargs
         )
@@ -40,6 +48,8 @@ class BaseClient:
 
     @allure.step("Perform PUT request")
     def put(self, path: str, **kwargs) -> requests.Response:
+        """Send a PUT request to client_url + path."""
+
         self.last_response = self.session.put(
             f"{self.client_url}{path}", **kwargs
         )
@@ -47,6 +57,8 @@ class BaseClient:
 
     @allure.step("Perform PATCH request")
     def patch(self, path: str, **kwargs) -> requests.Response:
+        """Send a PATCH request to client_url + path."""
+
         self.last_response = self.session.patch(
             f"{self.client_url}{path}", **kwargs
         )
@@ -54,6 +66,8 @@ class BaseClient:
 
     @allure.step("Perform DELETE request")
     def delete(self, path: str, **kwargs) -> requests.Response:
+        """Send a DELETE request to client_url + path."""
+
         self.last_response = self.session.delete(
             f"{self.client_url}{path}", **kwargs
         )
@@ -61,7 +75,11 @@ class BaseClient:
 
     @allure.step("Authorize client session")
     def authorize_session(self, token: str) -> None:
+        """Set a Bearer token on the session for all subsequent requests."""
+
         self.session.headers.update({"Authorization": f"Bearer {token}"})
 
     def close(self) -> None:
+        """Close the underlying requests session."""
+
         self.session.close()

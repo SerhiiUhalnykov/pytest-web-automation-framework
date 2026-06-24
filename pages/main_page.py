@@ -8,6 +8,8 @@ logger = get_logger(__name__)
 
 
 class MainPage(BasePage):
+    """Page object for the home page at /."""
+
     PATH: str = "/"
 
     def __init__(self, page: Page) -> None:
@@ -19,5 +21,6 @@ class MainPage(BasePage):
 
     @allure.step("Check main page is loaded")
     def assert_loaded(self) -> None:
+        """Assert the welcome heading is visible."""
 
         expect(self._heading).to_be_visible()

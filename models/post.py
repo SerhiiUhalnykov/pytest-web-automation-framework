@@ -3,6 +3,8 @@ from models.base import NonEmptyBaseModel
 
 
 class ReactionsResponse(NonEmptyBaseModel):
+    """Nested reactions object within a post response."""
+
     _check_non_empty = {"likes", "dislikes"}
 
     likes: int
@@ -10,6 +12,8 @@ class ReactionsResponse(NonEmptyBaseModel):
 
 
 class PostResponse(NonEmptyBaseModel):
+    """Response body for a single post."""
+
     _check_non_empty = {"id", "userId"}
 
     id: int
@@ -24,6 +28,8 @@ class PostResponse(NonEmptyBaseModel):
 
 
 class PostsResponse(NonEmptyBaseModel):
+    """Response body for the paginated posts list."""
+
     _check_non_empty = {"total", "skip", "limit"}
 
     posts: list
@@ -33,6 +39,8 @@ class PostsResponse(NonEmptyBaseModel):
 
 
 class PostRequest(BaseModel):
+    """Request body for create and update post operations."""
+
     userId: int | None = None
     title: str | None = None
     body: str | None = None
