@@ -32,7 +32,7 @@ class PostsResponse(NonEmptyBaseModel):
 
     _check_non_empty = {"total", "skip", "limit"}
 
-    posts: list
+    posts: list[PostResponse]
     total: int
     skip: int
     limit: int
