@@ -8,7 +8,7 @@ logger = get_logger(__name__)
 
 
 class LoginPage(BasePage):
-    """Page object for the /login page."""
+    """Page object for the /login endpoint."""
 
     PATH: str = "/login"
 
@@ -17,8 +17,12 @@ class LoginPage(BasePage):
 
         self._heading = self._page.get_by_role("heading", name="Login Page")
 
-        self._username_input = self._page.get_by_role("textbox", name="Username")
-        self._password_input = self._page.get_by_role("textbox", name="Password")
+        self._username_input = self._page.get_by_role(
+            "textbox", name="Username"
+        )
+        self._password_input = self._page.get_by_role(
+            "textbox", name="Password"
+        )
         self._login_btn = self._page.get_by_role("button", name="Login")
 
         self._invalid_err = self._page.locator("#flash")
