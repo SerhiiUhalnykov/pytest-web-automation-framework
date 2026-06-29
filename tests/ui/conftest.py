@@ -1,4 +1,4 @@
-from typing import Iterator
+from typing import Iterator, Any
 from pathlib import Path
 
 import pytest
@@ -45,10 +45,17 @@ def browser() -> Iterator[Browser]:
 
 
 @pytest.fixture(scope="function")
-def context(browser: Browser) -> Iterator[BrowserContext]:
+def browser_context_args() -> dict[str, Any]:
+    return {}
+
+
+@pytest.fixture(scope="function")
+def context(
+    browser: Browser, browser_context_args: dict[str, Any]
+) -> Iterator[BrowserContext]:
     """Playwright context creation with tracing"""
 
-    context = browser.new_context()
+    context = browser.new_context(**browser_context_args)
     # NOTE: tracing stoppage is handled by the save_attach_results fixture
     context.tracing.start(screenshots=True, snapshots=True, sources=True)
 
