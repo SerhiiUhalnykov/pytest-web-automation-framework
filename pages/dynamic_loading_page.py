@@ -42,7 +42,7 @@ class DynamicLoadingPage(BasePage):
 
     @allure.step("Check loading indicator appears and disappears")
     def assert_loading_then_done(self, timeout: int) -> None:
-        """Assert loading indicator appears and dissapears before timeout."""
+        """Assert loading indicator appears and disappears before timeout."""
 
         expect(self._loading).to_be_visible()
         expect(self._loading).to_be_hidden(timeout=timeout)

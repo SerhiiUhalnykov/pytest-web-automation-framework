@@ -9,7 +9,7 @@
 ![Playwright](https://img.shields.io/badge/playwright-1.6-brightgreen)
 ![Allure](https://img.shields.io/badge/allure-2.42.0-brightgreen)
 
-## Lastest Published Report:
+## Latest Published Report:
 
 [Regression tests pipeline latest report](https://serhiiuhalnykov.github.io/pytest-web-automation-framework/)
 
@@ -90,7 +90,7 @@ allure serve allure-report
 |
 ├── allure-results/   # generated Allure raw results
 ├── allure-report/    # generated Allure HTML report
-├── artifacts/        # generated screenshots/traces/reponse dumps on fail
+├── artifacts/        # generated screenshots/traces/response dumps on fail
 |
 ├── conftest.py       # shared pytest fixtures/hooks
 ├── pytest.ini        # pytest config
