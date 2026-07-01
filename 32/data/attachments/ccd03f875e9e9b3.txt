@@ -1,0 +1,4 @@
+2026-07-01 11:02:37,309 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
+2026-07-01 11:02:37,310 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
+2026-07-01 11:02:38,412 | INFO | pages.js_alerts_page | Triggered alert type: prompt, message: I am a JS prompt
+2026-07-01 11:02:38,458 | INFO | pages.js_alerts_page | Triggered alert type: prompt, message: I am a JS prompt

@@ -1,0 +1,4 @@
+2026-07-01 11:02:50,577 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-07-01 11:02:50,614 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-01 11:02:50,614 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-01 11:02:51,665 | INFO | pages.upload_page | Create and choose text file professor.txt for uploading

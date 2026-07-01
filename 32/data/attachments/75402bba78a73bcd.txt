@@ -1,0 +1,2 @@
+2026-07-01 11:03:00,137 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-01 11:03:00,138 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
