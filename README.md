@@ -13,6 +13,8 @@
 
 [Regression tests pipeline latest report](https://serhiiuhalnykov.github.io/pytest-web-automation-framework/)
 
+[Demo report — all Allure statuses showcase](https://serhiiuhalnykov.github.io/pytest-web-automation-framework/demo-report/)
+
 ## 📌 Overview
 
 Example of a combined UI and API automation framework using:
