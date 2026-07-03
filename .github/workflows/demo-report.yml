@@ -2,6 +2,9 @@ name: Demo report
 
 on:
   workflow_dispatch:
+    inputs:
+      ref:
+        default: demo/report
 
 permissions:
   contents: write
@@ -14,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          ref: demo/report
 
       - name: Set up Python
         uses: actions/setup-python@v6
