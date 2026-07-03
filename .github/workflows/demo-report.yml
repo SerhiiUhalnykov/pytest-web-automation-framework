@@ -1,0 +1,61 @@
+name: Demo report
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  demo_report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright
+        run: python -m playwright install --with-deps
+
+      - name: Create .env for variables
+        run: echo "${{ vars.ENV_FILE }}" > .env
+
+      - name: Run demo tests (failures expected)
+        run: pytest -m "demo or smoke" -n auto
+        continue-on-error: true
+
+      - name: Upload demo artifacts
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: demo-artifacts
+          path: |
+            artifacts
+            allure-results
+          retention-days: 1
+
+      - name: Generate Allure report
+        uses: simple-elf/allure-report-action@v1.14
+        with:
+          allure_results: allure-results
+          allure_report: allure-report
+
+      - name: Deploy demo report to gh-pages/demo-report
+        if: github.ref == 'refs/heads/demo/report'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-report
+          destination_dir: demo-report
+          commit_message: Deploy demo report to Github Pages
+          keep_files: true
