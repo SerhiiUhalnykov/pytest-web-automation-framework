@@ -33,6 +33,22 @@ def pytest_sessionfinish(session: pytest.Session) -> None:
         shutil.copy(src, dst)
 
 
+def pytest_collection_modifyitems(
+    config: pytest.Config, items: list[pytest.Item]
+) -> None:
+    """Deselect demo tests unless the run explicitly asks for them via -m demo."""
+
+    if "demo" in (config.getoption("markexpr") or ""):
+        return
+    selected, deselected = [], []
+    for item in items:
+        target = deselected if item.get_closest_marker("demo") else selected
+        target.append(item)
+    if deselected:
+        config.hook.pytest_deselected(items=deselected)
+        items[:] = selected
+
+
 @pytest.fixture(scope="module")
 def artifacts_dir(artifacts_subdir: str) -> Path:
     """Create a directory to store test artifacts."""
