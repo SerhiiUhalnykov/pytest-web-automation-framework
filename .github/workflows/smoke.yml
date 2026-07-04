@@ -6,6 +6,8 @@ on:
     paths-ignore:
       - "README.md"
       - ".env.example"
+      - ".github/workflows/regression.yml"
+      - ".github/workflows/demo-report.yml"
   pull_request:
     branches: [main]
 
