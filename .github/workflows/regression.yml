@@ -110,7 +110,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: demo-artifacts
+          name: demo-results
           path:
             demo-results
           retention-days: 1
@@ -185,7 +185,7 @@ jobs:
         uses: simple-elf/allure-report-action@v1.14
         if: always()
         with:
-          allure_results: test-artifacts/demo-artifacts/demo-results
+          allure_results: test-artifacts/demo-results
           allure_report: demo-report
 
       - name: Deploy demo report to gh-pages/demo-report
