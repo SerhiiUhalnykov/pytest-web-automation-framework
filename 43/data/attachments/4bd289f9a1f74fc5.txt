@@ -1,0 +1,4 @@
+2026-07-05 05:03:17,420 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-07-05 05:03:17,922 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-05 05:03:17,922 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-05 05:03:18,647 | INFO | pages.upload_page | Create and choose text file investment.txt for uploading
