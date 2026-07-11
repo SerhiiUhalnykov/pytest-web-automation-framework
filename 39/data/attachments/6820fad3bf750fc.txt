@@ -1,4 +1,0 @@
-2026-07-04 04:41:16,232 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-04 04:41:16,330 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-04 04:41:16,331 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-04 04:41:16,767 | INFO | pages.upload_page | Create and choose text file road.txt for uploading

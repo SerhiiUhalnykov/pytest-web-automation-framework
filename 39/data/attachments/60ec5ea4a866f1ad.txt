@@ -1,2 +1,0 @@
-2026-07-04 04:40:35,554 | INFO | api.base_client | Initializing AuthClient with URL: https://dummyjson.com/auth
-2026-07-04 04:40:35,760 | INFO | api.base_client | POST https://dummyjson.com/auth/login -> 400

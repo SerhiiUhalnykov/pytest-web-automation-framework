@@ -1,0 +1,3 @@
+2026-07-11 04:19:05,169 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-07-11 04:19:06,558 | INFO | pages.base_page | Initializing BasicAuthPage with URL: https://the-internet.herokuapp.com/basic_auth
+2026-07-11 04:19:06,559 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/basic_auth

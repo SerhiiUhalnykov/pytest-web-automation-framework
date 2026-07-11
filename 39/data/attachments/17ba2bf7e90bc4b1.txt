@@ -1,4 +1,0 @@
-2026-07-04 04:41:45,201 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-07-04 04:41:45,662 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-04 04:41:45,665 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-04 04:41:47,421 | INFO | pages.upload_page | Create and choose text file attorney.txt for uploading
