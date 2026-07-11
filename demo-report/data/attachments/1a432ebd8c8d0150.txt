@@ -1,0 +1,3 @@
+INFO     pages.base_page:base_page.py:17 Initializing MainPage with URL: https://the-internet.herokuapp.com/
+INFO     pages.base_page:base_page.py:33 Opening https://the-internet.herokuapp.com/
+INFO     conftest:conftest.py:88 Saving artifacts on failed test: gw3_test_demo_broken[chromium]_20260711_043526.png, gw3_test_demo_broken[chromium]_20260711_043526.zip
