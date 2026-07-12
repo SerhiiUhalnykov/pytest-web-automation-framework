@@ -1,0 +1,4 @@
+INFO     conftest:conftest.py:58 Artifacts dir: artifacts/api
+INFO     api.base_client:base_client.py:21 Initializing PostsClient with URL: https://dummyjson.com/posts
+INFO     api.base_client:base_client.py:37 GET https://dummyjson.com/posts -> 200
+INFO     conftest:conftest.py:100 Saving artifacts on failed test: gw0_test_demo_failed_20260712_043012.json
