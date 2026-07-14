@@ -1,0 +1,4 @@
+2026-07-14 04:09:37,644 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-07-14 04:09:37,936 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-14 04:09:37,936 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-14 04:09:39,219 | INFO | pages.upload_page | Create and choose text file worry.txt for uploading
