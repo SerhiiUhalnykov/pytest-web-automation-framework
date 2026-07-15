@@ -1,0 +1,3 @@
+2026-07-15 04:10:21,799 | INFO | conftest | Artifacts dir: artifacts/api
+2026-07-15 04:10:21,799 | INFO | api.base_client | Initializing PostsClient with URL: https://dummyjson.com/posts
+2026-07-15 04:10:21,884 | INFO | api.base_client | GET https://dummyjson.com/posts -> 200
