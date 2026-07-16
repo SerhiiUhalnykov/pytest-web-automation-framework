@@ -1,3 +1,0 @@
-2026-07-06 05:18:41,674 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-07-06 05:18:46,275 | INFO | pages.base_page | Initializing BasicAuthPage with URL: https://the-internet.herokuapp.com/basic_auth
-2026-07-06 05:18:46,280 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/basic_auth
