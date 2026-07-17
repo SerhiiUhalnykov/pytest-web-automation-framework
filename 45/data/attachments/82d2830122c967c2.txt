@@ -1,4 +1,0 @@
-2026-07-07 04:59:59,915 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-07 05:00:00,025 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-07 05:00:00,025 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-07 05:00:00,423 | INFO | pages.upload_page | Create and choose text file camera.txt for uploading
