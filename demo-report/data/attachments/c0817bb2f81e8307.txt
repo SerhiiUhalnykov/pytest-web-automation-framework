@@ -1,3 +1,0 @@
-2026-07-18 04:06:27,033 | INFO | pages.base_page | Initializing MainPage with URL: https://the-internet.herokuapp.com/
-2026-07-18 04:06:27,033 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/
-2026-07-18 04:06:28,081 | INFO | conftest | Saving artifacts on failed test: gw1_test_demo_broken[chromium]_20260718_040627.png, gw1_test_demo_broken[chromium]_20260718_040627.zip

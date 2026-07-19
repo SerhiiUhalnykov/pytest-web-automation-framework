@@ -1,4 +1,0 @@
-2026-07-09 05:00:15,591 | INFO | conftest | Artifacts dir: artifacts/firefox
-2026-07-09 05:00:16,095 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-09 05:00:16,095 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-09 05:00:16,746 | INFO | pages.upload_page | Create and choose text file western.txt for uploading
