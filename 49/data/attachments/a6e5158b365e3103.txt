@@ -1,3 +1,0 @@
-2026-07-11 04:19:06,257 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-11 04:19:06,422 | INFO | pages.base_page | Initializing DynamicLoadingPage with URL: https://the-internet.herokuapp.com/dynamic_loading
-2026-07-11 04:19:06,422 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/dynamic_loading/1

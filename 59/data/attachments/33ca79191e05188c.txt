@@ -1,0 +1,4 @@
+2026-07-21 04:20:35,779 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-07-21 04:20:36,131 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-21 04:20:36,131 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-21 04:20:36,640 | INFO | pages.upload_page | Create and choose text file season.txt for uploading
