@@ -1,4 +1,0 @@
-2026-07-12 04:30:41,986 | INFO | conftest | Artifacts dir: artifacts/firefox
-2026-07-12 04:30:42,353 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-12 04:30:42,354 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-12 04:30:43,587 | INFO | pages.upload_page | Create and choose text file speech.txt for uploading
