@@ -155,7 +155,7 @@ jobs:
           path: gh-pages
 
       - name: Generate Allure Report from history and results
-        uses: simple-elf/allure-report-action@v1.14
+        uses: simple-elf/allure-report-action@master
         if: always()
         with:
           allure_results: allure-results
@@ -182,7 +182,7 @@ jobs:
           commit_message: Deploy report to Github Pages
 
       - name: Generate Allure Report for demo tests
-        uses: simple-elf/allure-report-action@v1.14
+        uses: simple-elf/allure-report-action@master
         if: always()
         with:
           allure_results: test-artifacts/demo-results
