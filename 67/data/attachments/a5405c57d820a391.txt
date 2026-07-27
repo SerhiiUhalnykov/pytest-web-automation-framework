@@ -1,0 +1,4 @@
+2026-07-27 04:43:30,631 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-07-27 04:43:30,848 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-27 04:43:30,848 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-27 04:43:32,135 | INFO | pages.upload_page | Create and choose text file thousand.txt for uploading
