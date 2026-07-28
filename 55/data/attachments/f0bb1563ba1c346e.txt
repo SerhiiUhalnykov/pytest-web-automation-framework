@@ -1,5 +1,0 @@
-2026-07-17 04:12:45,889 | INFO | api.base_client | Initializing AuthClient with URL: https://dummyjson.com/auth
-2026-07-17 04:12:46,015 | INFO | api.base_client | POST https://dummyjson.com/auth/login -> 200
-2026-07-17 04:12:46,015 | INFO | api.base_client | Initializing PostsClient with URL: https://dummyjson.com/posts
-2026-07-17 04:12:46,138 | INFO | api.base_client | GET https://dummyjson.com/posts/1 -> 200
-2026-07-17 04:12:46,198 | INFO | api.base_client | PATCH https://dummyjson.com/posts/1 -> 200

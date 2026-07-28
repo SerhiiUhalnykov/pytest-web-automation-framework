@@ -1,0 +1,4 @@
+2026-07-28 04:17:23,259 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-07-28 04:17:23,678 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-28 04:17:23,678 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-28 04:17:24,934 | INFO | pages.upload_page | Create and choose text file remain.txt for uploading
