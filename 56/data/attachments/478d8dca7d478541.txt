@@ -1,2 +1,0 @@
-2026-07-18 04:06:17,728 | INFO | pages.base_page | Initializing BasicAuthPage with URL: https://the-internet.herokuapp.com/basic_auth
-2026-07-18 04:06:17,729 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/basic_auth
