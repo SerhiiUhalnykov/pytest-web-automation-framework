@@ -1,3 +1,0 @@
-2026-07-19 04:27:15,725 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-07-19 04:27:16,001 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-19 04:27:16,002 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
