@@ -1,0 +1,4 @@
+2026-07-31 04:29:11,148 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-07-31 04:29:11,555 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-07-31 04:29:11,555 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-07-31 04:29:12,154 | INFO | pages.upload_page | Create and choose text file society.txt for uploading

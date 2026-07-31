@@ -1,3 +1,0 @@
-2026-07-30 04:12:20,135 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-30 04:12:20,214 | INFO | pages.base_page | Initializing MainPage with URL: https://the-internet.herokuapp.com/
-2026-07-30 04:12:20,214 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/
