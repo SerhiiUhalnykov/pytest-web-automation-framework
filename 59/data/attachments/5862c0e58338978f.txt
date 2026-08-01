@@ -1,4 +1,0 @@
-2026-07-21 04:20:37,366 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-21 04:20:37,419 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-21 04:20:37,420 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-21 04:20:38,010 | INFO | pages.upload_page | Create and choose text file military.txt for uploading

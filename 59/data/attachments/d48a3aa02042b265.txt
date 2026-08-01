@@ -1,4 +1,0 @@
-2026-07-21 04:21:04,173 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-07-21 04:21:04,511 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
-2026-07-21 04:21:04,511 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
-2026-07-21 04:21:06,622 | INFO | pages.login_page | Logging into secure page
