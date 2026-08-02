@@ -1,0 +1,4 @@
+2026-08-02 04:29:20,622 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-08-02 04:29:20,986 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-08-02 04:29:20,986 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-08-02 04:29:21,749 | INFO | pages.upload_page | Create and choose text file church.txt for uploading
