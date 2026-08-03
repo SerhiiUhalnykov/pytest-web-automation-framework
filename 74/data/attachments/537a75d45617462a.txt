@@ -1,0 +1,4 @@
+2026-08-03 04:36:23,547 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-08-03 04:36:23,624 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-08-03 04:36:23,625 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-08-03 04:36:24,745 | INFO | pages.login_page | Logging into secure page

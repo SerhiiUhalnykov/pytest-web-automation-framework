@@ -1,0 +1,4 @@
+2026-08-03 04:36:10,493 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-08-03 04:36:10,958 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-08-03 04:36:10,958 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-08-03 04:36:11,731 | INFO | pages.upload_page | Create and choose text file miss.txt for uploading
