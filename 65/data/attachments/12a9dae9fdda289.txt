@@ -1,4 +1,0 @@
-2026-07-25 14:58:59,234 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-25 14:58:59,318 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-25 14:58:59,318 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-25 14:58:59,775 | INFO | pages.upload_page | Create and choose text file moment.txt for uploading

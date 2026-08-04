@@ -1,3 +1,0 @@
-2026-07-25 14:59:12,250 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-07-25 14:59:17,125 | INFO | pages.base_page | Initializing DynamicLoadingPage with URL: https://the-internet.herokuapp.com/dynamic_loading
-2026-07-25 14:59:17,126 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/dynamic_loading/1
