@@ -1,3 +1,0 @@
-2026-07-26 04:32:34,472 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-26 04:32:34,551 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-26 04:32:34,552 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload

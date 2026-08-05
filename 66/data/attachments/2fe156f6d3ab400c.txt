@@ -1,4 +1,0 @@
-2026-07-26 04:33:07,995 | INFO | conftest | Artifacts dir: artifacts/firefox
-2026-07-26 04:33:08,336 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-26 04:33:08,336 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-26 04:33:09,617 | INFO | pages.upload_page | Create and choose text file budget.txt for uploading

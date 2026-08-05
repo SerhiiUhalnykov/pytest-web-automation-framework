@@ -1,4 +1,0 @@
-2026-07-26 04:32:33,914 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-07-26 04:32:34,020 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-07-26 04:32:34,020 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-07-26 04:32:34,478 | INFO | pages.upload_page | Create and choose text file theory.txt for uploading
