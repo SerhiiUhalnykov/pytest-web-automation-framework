@@ -1,3 +1,0 @@
-2026-07-29 04:18:45,273 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-07-29 04:18:45,465 | INFO | pages.base_page | Initializing MainPage with URL: https://the-internet.herokuapp.com/
-2026-07-29 04:18:45,465 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/
