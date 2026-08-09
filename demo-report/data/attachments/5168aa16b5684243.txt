@@ -1,4 +1,0 @@
-2026-08-08 02:58:33,005 | INFO | conftest | Artifacts dir: artifacts/api
-2026-08-08 02:58:33,006 | INFO | api.base_client | Initializing PostsClient with URL: https://dummyjson.com/posts
-2026-08-08 02:58:33,258 | INFO | api.base_client | GET https://dummyjson.com/posts/1 -> 200
-2026-08-08 02:58:33,295 | INFO | conftest | Saving artifacts on failed test: gw1_test_demo_broken_20260808_025833.json

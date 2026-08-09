@@ -1,4 +1,0 @@
-2026-08-08 02:58:36,617 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-08-08 02:58:36,779 | INFO | pages.base_page | Initializing MainPage with URL: https://the-internet.herokuapp.com/
-2026-08-08 02:58:36,780 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/
-2026-08-08 02:58:38,283 | INFO | conftest | Saving artifacts on failed test: gw1_test_demo_failed[chromium]_20260808_025836.png, gw1_test_demo_failed[chromium]_20260808_025836.zip
