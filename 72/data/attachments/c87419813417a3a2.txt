@@ -1,4 +1,0 @@
-2026-08-01 04:26:01,753 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-08-01 04:26:01,860 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-08-01 04:26:01,860 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-08-01 04:26:02,329 | INFO | pages.upload_page | Create and choose text file claim.txt for uploading

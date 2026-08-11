@@ -1,4 +1,0 @@
-2026-08-01 04:26:12,734 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
-2026-08-01 04:26:12,735 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
-2026-08-01 04:26:13,441 | INFO | pages.js_alerts_page | Triggered alert type: confirm, message: I am a JS Confirm
-2026-08-01 04:26:13,788 | INFO | pages.js_alerts_page | Triggered alert type: confirm, message: I am a JS Confirm
