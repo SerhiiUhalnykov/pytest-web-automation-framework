@@ -1,3 +1,0 @@
-2026-08-03 04:35:21,053 | INFO | conftest | Artifacts dir: artifacts/api
-2026-08-03 04:35:21,054 | INFO | api.base_client | Initializing AuthClient with URL: https://dummyjson.com/auth
-2026-08-03 04:35:21,193 | INFO | api.base_client | GET https://dummyjson.com/auth/me -> 401

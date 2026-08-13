@@ -1,4 +1,0 @@
-2026-08-03 04:36:24,315 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-08-03 04:36:24,380 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-08-03 04:36:24,380 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-08-03 04:36:25,429 | INFO | pages.upload_page | Create and choose text file brother.txt for uploading
