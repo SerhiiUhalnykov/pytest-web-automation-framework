@@ -1,0 +1,2 @@
+2026-08-14 03:26:20,811 | INFO | api.base_client | Initializing PostsClient with URL: https://dummyjson.com/posts
+2026-08-14 03:26:20,918 | INFO | api.base_client | GET https://dummyjson.com/posts -> 200
