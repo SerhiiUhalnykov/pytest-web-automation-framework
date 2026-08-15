@@ -1,3 +1,0 @@
-2026-08-05 04:16:15,130 | INFO | conftest | Artifacts dir: artifacts/api
-2026-08-05 04:16:15,131 | INFO | api.base_client | Initializing AuthClient with URL: https://dummyjson.com/auth
-2026-08-05 04:16:15,306 | INFO | api.base_client | POST https://dummyjson.com/auth/login -> 200
