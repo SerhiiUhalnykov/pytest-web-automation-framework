@@ -1,4 +1,0 @@
-2026-08-06 04:20:35,464 | INFO | conftest | Artifacts dir: artifacts/firefox
-2026-08-06 04:20:35,660 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-08-06 04:20:35,662 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-08-06 04:20:36,689 | INFO | pages.upload_page | Create and choose text file majority.txt for uploading
