@@ -1,0 +1,4 @@
+2026-08-18 02:40:54,565 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-08-18 02:40:54,884 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-08-18 02:40:54,884 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-08-18 02:40:56,099 | INFO | pages.upload_page | Create and choose text file city.txt for uploading
