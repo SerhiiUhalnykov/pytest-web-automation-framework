@@ -1,3 +1,0 @@
-2026-08-10 03:15:31,596 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-08-10 03:15:32,040 | INFO | pages.base_page | Initializing BasicAuthPage with URL: https://the-internet.herokuapp.com/basic_auth
-2026-08-10 03:15:32,041 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/basic_auth
