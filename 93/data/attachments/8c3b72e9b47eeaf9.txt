@@ -1,0 +1,4 @@
+2026-08-22 02:17:54,797 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-08-22 02:17:56,290 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
+2026-08-22 02:17:56,290 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
+2026-08-22 02:17:58,269 | INFO | pages.js_alerts_page | Triggered alert type: alert, message: I am a JS Alert
