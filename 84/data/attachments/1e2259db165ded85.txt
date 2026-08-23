@@ -1,4 +1,0 @@
-2026-08-13 03:30:34,393 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-08-13 03:30:34,751 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-08-13 03:30:34,751 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-08-13 03:30:36,509 | INFO | pages.upload_page | Create and choose text file agreement.txt for uploading
