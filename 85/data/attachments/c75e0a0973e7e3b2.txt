@@ -1,4 +1,0 @@
-2026-08-14 03:27:56,856 | INFO | conftest | Artifacts dir: artifacts/chromium
-2026-08-14 03:27:56,918 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-08-14 03:27:56,919 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-08-14 03:27:57,931 | INFO | pages.upload_page | Create and choose text file interview.txt for uploading
