@@ -1,0 +1,4 @@
+2026-08-26 02:27:31,051 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-08-26 02:27:31,415 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-08-26 02:27:31,415 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-08-26 02:27:32,922 | INFO | pages.upload_page | Create and choose text file voice.txt for uploading
