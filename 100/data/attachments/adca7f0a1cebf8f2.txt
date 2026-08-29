@@ -1,0 +1,4 @@
+2026-08-29 07:47:54,440 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-08-29 07:47:54,877 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-08-29 07:47:54,877 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-08-29 07:47:55,423 | INFO | pages.upload_page | Create and choose text file seem.txt for uploading

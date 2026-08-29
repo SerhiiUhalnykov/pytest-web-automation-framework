@@ -1,0 +1,4 @@
+2026-08-29 07:48:32,135 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-08-29 07:48:32,322 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-08-29 07:48:32,322 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-08-29 07:48:33,925 | INFO | pages.upload_page | Create and choose text file democratic.txt for uploading
