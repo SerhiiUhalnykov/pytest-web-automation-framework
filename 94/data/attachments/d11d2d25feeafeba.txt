@@ -1,4 +1,0 @@
-2026-08-23 02:26:36,606 | INFO | conftest | Artifacts dir: artifacts/webkit
-2026-08-23 02:26:36,943 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
-2026-08-23 02:26:36,943 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
-2026-08-23 02:26:38,274 | INFO | pages.upload_page | Create and choose text file gas.txt for uploading
