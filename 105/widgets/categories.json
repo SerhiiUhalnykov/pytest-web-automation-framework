@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"8fb3a91ba5aaf9de24cc8a92edc82b5d","name":"Product defects","statistic":{"failed":45,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":45}},{"uid":"b9cec061a88d74bcdad8c9cb818ae234","name":"UI timeout / element not found","statistic":{"failed":0,"broken":6,"skipped":0,"passed":0,"unknown":0,"total":6}}]}

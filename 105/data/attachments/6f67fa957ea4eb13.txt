@@ -1,0 +1,4 @@
+2026-09-03 05:38:18,878 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-09-03 05:38:18,935 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-03 05:38:18,935 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-03 05:38:28,138 | INFO | conftest | Saving artifacts on failed test: gw2_test_upload_file_empty[chromium]_20260903_053818.png, gw2_test_upload_file_empty[chromium]_20260903_053818.zip

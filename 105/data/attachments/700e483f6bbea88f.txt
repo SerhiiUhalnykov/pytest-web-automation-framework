@@ -1,0 +1,4 @@
+2026-09-03 05:38:08,836 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-03 05:38:09,112 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-09-03 05:38:09,112 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-09-03 05:38:18,353 | INFO | conftest | Saving artifacts on failed test: gw2_test_login_invalid_username[webkit-empty-user]_20260903_053809.png, gw2_test_login_invalid_username[webkit-empty-user]_20260903_053809.zip

@@ -1,0 +1,4 @@
+2026-09-03 05:38:25,262 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-09-03 05:38:25,475 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-09-03 05:38:25,475 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-09-03 05:38:34,858 | INFO | conftest | Saving artifacts on failed test: gw0_test_login_invalid_password[firefox-empty-pass]_20260903_053825.png, gw0_test_login_invalid_password[firefox-empty-pass]_20260903_053825.zip

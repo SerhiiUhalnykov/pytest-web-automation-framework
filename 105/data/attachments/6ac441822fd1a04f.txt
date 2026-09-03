@@ -1,0 +1,4 @@
+2026-09-03 05:38:08,644 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-03 05:38:08,936 | INFO | pages.base_page | Initializing MainPage with URL: https://the-internet.herokuapp.com/
+2026-09-03 05:38:08,936 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/
+2026-09-03 05:38:18,271 | INFO | conftest | Saving artifacts on failed test: gw3_test_main[webkit]_20260903_053808.png, gw3_test_main[webkit]_20260903_053808.zip

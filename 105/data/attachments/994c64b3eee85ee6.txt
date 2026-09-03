@@ -1,0 +1,4 @@
+2026-09-03 05:37:45,317 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-03 05:37:49,472 | INFO | pages.base_page | Initializing BasicAuthPage with URL: https://the-internet.herokuapp.com/basic_auth
+2026-09-03 05:37:49,474 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/basic_auth
+2026-09-03 05:37:58,956 | INFO | conftest | Saving artifacts on failed test: gw0_test_basic_auth_valid[webkit-valid_credentials]_20260903_053749.png, gw0_test_basic_auth_valid[webkit-valid_credentials]_20260903_053749.zip

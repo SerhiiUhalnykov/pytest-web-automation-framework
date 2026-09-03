@@ -1,0 +1,4 @@
+2026-09-03 05:37:45,317 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-03 05:37:49,460 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
+2026-09-03 05:37:49,462 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
+2026-09-03 05:37:58,962 | INFO | conftest | Saving artifacts on failed test: gw3_test_prompt[webkit]_20260903_053749.png, gw3_test_prompt[webkit]_20260903_053749.zip

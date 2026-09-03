@@ -1,0 +1,4 @@
+INFO     conftest:conftest.py:42 Artifacts dir: artifacts/firefox
+INFO     pages.base_page:base_page.py:17 Initializing DynamicLoadingPage with URL: https://the-internet.herokuapp.com/dynamic_loading
+INFO     pages.base_page:base_page.py:33 Opening https://the-internet.herokuapp.com/dynamic_loading/1
+INFO     conftest:conftest.py:88 Saving artifacts on failed test: gw1_test_hidden_element[firefox]_20260903_053806.png, gw1_test_hidden_element[firefox]_20260903_053806.zip

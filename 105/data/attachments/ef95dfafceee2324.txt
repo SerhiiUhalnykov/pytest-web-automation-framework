@@ -1,0 +1,4 @@
+2026-09-03 05:38:27,848 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-03 05:38:28,031 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-09-03 05:38:28,031 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-09-03 05:38:37,212 | INFO | conftest | Saving artifacts on failed test: gw3_test_login_invalid_password[webkit-wrong-pass]_20260903_053828.png, gw3_test_login_invalid_password[webkit-wrong-pass]_20260903_053828.zip

@@ -1,0 +1,4 @@
+INFO     conftest:conftest.py:42 Artifacts dir: artifacts/chromium
+INFO     pages.base_page:base_page.py:17 Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+INFO     pages.base_page:base_page.py:33 Opening https://the-internet.herokuapp.com/login
+INFO     conftest:conftest.py:88 Saving artifacts on failed test: gw3_test_full_login_logout_valid[chromium]_20260903_053800.png, gw3_test_full_login_logout_valid[chromium]_20260903_053800.zip
