@@ -1,2 +1,0 @@
-2026-08-26 02:27:35,236 | INFO | pages.base_page | Initializing DynamicLoadingPage with URL: https://the-internet.herokuapp.com/dynamic_loading
-2026-08-26 02:27:35,236 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/dynamic_loading/2
