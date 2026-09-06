@@ -1,0 +1,4 @@
+2026-09-06 05:44:06,961 | INFO | api.base_client | Initializing AuthClient with URL: https://dummyjson.com/auth
+2026-09-06 05:44:07,104 | INFO | api.base_client | POST https://dummyjson.com/auth/login -> 200
+2026-09-06 05:44:07,105 | INFO | api.base_client | Initializing UserClient with URL: https://dummyjson.com/user
+2026-09-06 05:44:07,278 | INFO | api.base_client | GET https://dummyjson.com/user/me -> 200

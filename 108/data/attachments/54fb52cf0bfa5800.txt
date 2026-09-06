@@ -1,0 +1,5 @@
+2026-09-06 05:44:53,735 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-09-06 05:44:53,892 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
+2026-09-06 05:44:53,893 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
+2026-09-06 05:44:54,749 | INFO | pages.js_alerts_page | Triggered alert type: prompt, message: I am a JS prompt
+2026-09-06 05:44:54,915 | INFO | pages.js_alerts_page | Triggered alert type: prompt, message: I am a JS prompt
