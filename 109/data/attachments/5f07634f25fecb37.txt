@@ -1,0 +1,4 @@
+2026-09-07 05:55:19,897 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-07 05:55:20,360 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-07 05:55:20,361 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-07 05:55:21,965 | INFO | pages.upload_page | Create and choose text file threat.txt for uploading
