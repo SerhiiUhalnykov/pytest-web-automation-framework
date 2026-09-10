@@ -1,0 +1,17 @@
+launch_status failed=3 1789019284000000000
+launch_status broken=2 1789019284000000000
+launch_status passed=12 1789019284000000000
+launch_status skipped=2 1789019284000000000
+launch_status unknown=0 1789019284000000000
+launch_time duration=8521 1789019284000000000
+launch_time min_duration=0 1789019284000000000
+launch_time max_duration=4121 1789019284000000000
+launch_time sum_duration=22814 1789019284000000000
+launch_time start=1789019192824 1789019284000000000
+launch_time stop=1789019201345 1789019284000000000
+launch_problems product_defects=3 1789019284000000000
+launch_problems ui_timeout_/_element_not_found=1 1789019284000000000
+launch_problems api_contract_/_schema_mismatch=1 1789019284000000000
+launch_problems ignored_tests=2 1789019284000000000
+launch_retries retries=0 1789019284000000000
+launch_retries run=19 1789019284000000000
