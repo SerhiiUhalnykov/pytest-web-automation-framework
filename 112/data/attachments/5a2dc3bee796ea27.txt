@@ -1,0 +1,4 @@
+2026-09-10 05:46:59,433 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-10 05:46:59,921 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-10 05:46:59,921 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-10 05:47:01,600 | INFO | pages.upload_page | Create and choose text file most.txt for uploading
