@@ -1,0 +1,4 @@
+2026-09-12 05:34:39,143 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-09-12 05:34:39,730 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-09-12 05:34:39,730 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-09-12 05:34:40,608 | INFO | pages.login_page | Logging into secure page
