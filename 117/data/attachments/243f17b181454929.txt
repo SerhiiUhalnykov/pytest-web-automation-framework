@@ -1,0 +1,4 @@
+2026-09-15 06:01:42,594 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-09-15 06:01:42,642 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-15 06:01:42,643 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-15 06:01:43,183 | INFO | pages.upload_page | Create and choose text file guy.txt for uploading
