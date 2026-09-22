@@ -1,0 +1,4 @@
+2026-09-22 06:00:12,706 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-09-22 06:00:13,130 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-22 06:00:13,131 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-22 06:00:13,642 | INFO | pages.upload_page | Create and choose text file drug.txt for uploading
