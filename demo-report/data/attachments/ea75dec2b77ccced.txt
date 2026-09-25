@@ -1,0 +1,5 @@
+2026-09-25 06:02:54,279 | INFO | conftest | Artifacts dir: artifacts/api
+2026-09-25 06:02:54,280 | INFO | api.base_client | Initializing AuthClient with URL: https://dummyjson.com/auth
+2026-09-25 06:02:54,470 | INFO | api.base_client | POST https://dummyjson.com/auth/login -> 200
+2026-09-25 06:02:54,470 | INFO | api.base_client | Initializing PostsClient with URL: https://dummyjson.com/posts
+2026-09-25 06:02:54,662 | INFO | api.base_client | PUT https://dummyjson.com/posts/1 -> 200
