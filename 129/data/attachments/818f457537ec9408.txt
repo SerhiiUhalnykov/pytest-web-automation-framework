@@ -1,0 +1,4 @@
+2026-09-27 06:29:15,212 | INFO | conftest | Artifacts dir: artifacts/webkit
+2026-09-27 06:29:15,509 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-27 06:29:15,510 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-27 06:29:16,247 | INFO | pages.upload_page | Create and choose text file science.txt for uploading
