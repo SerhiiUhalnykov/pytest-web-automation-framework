@@ -1,0 +1,4 @@
+2026-09-30 06:33:17,965 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-09-30 06:33:18,140 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-09-30 06:33:18,143 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-09-30 06:33:18,764 | INFO | pages.upload_page | Create and choose text file Republican.txt for uploading
