@@ -1,0 +1,5 @@
+"BROKEN","CATEGORY","FAILED","PASSED","SKIPPED","UNKNOWN"
+"0","Product defects","2","0","0","0"
+"1","API contract / schema mismatch","0","0","0","0"
+"1","UI timeout / element not found","0","0","0","0"
+"0","Ignored tests","0","0","2","0"
