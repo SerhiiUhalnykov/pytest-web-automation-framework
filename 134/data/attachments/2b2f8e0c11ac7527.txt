@@ -1,0 +1,4 @@
+2026-10-02 06:54:10,697 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-10-02 06:54:10,814 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
+2026-10-02 06:54:10,814 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
+2026-10-02 06:54:41,205 | INFO | conftest | Saving artifacts on failed test: gw3_test_prompt[chromium]_20261002_065410.png, gw3_test_prompt[chromium]_20261002_065410.zip
