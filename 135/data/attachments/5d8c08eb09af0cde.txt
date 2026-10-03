@@ -1,0 +1,3 @@
+2026-10-03 06:20:02,356 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-10-03 06:20:02,356 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-10-03 06:20:32,616 | INFO | conftest | Saving artifacts on failed test: gw2_test_login_invalid_username[webkit-wrong-user-pass]_20261003_062002.png, gw2_test_login_invalid_username[webkit-wrong-user-pass]_20261003_062002.zip

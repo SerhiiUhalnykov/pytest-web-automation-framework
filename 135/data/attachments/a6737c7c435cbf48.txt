@@ -1,0 +1,3 @@
+2026-10-03 06:18:59,045 | INFO | pages.base_page | Initializing JSAlertsPage with URL: https://the-internet.herokuapp.com/javascript_alerts
+2026-10-03 06:18:59,045 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/javascript_alerts
+2026-10-03 06:19:29,400 | INFO | conftest | Saving artifacts on failed test: gw2_test_confirm[webkit]_20261003_061859.png, gw2_test_confirm[webkit]_20261003_061859.zip
