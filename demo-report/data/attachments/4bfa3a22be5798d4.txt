@@ -1,0 +1,4 @@
+2026-10-03 06:18:38,357 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-10-03 06:18:38,503 | INFO | pages.base_page | Initializing BasicAuthPage with URL: https://the-internet.herokuapp.com/basic_auth
+2026-10-03 06:18:38,503 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/basic_auth
+2026-10-03 06:19:08,661 | INFO | conftest | Saving artifacts on failed test: gw2_test_basic_auth_valid[chromium-valid_credentials]_20261003_061838.png, gw2_test_basic_auth_valid[chromium-valid_credentials]_20261003_061838.zip
