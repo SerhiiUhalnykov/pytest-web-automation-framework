@@ -1,0 +1,4 @@
+2026-10-04 06:45:22,772 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-10-04 06:45:22,814 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-10-04 06:45:22,815 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-10-04 06:45:52,969 | INFO | conftest | Saving artifacts on failed test: gw3_test_login_invalid_username[chromium-wrong-user-pass]_20261004_064522.png, gw3_test_login_invalid_username[chromium-wrong-user-pass]_20261004_064522.zip

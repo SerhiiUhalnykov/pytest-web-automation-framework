@@ -1,0 +1,4 @@
+2026-10-04 06:44:59,087 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-10-04 06:44:59,366 | INFO | pages.base_page | Initializing UploadPage with URL: https://the-internet.herokuapp.com/upload
+2026-10-04 06:44:59,366 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/upload
+2026-10-04 06:45:29,599 | INFO | conftest | Saving artifacts on failed test: gw2_test_upload_file_empty[firefox]_20261004_064459.png, gw2_test_upload_file_empty[firefox]_20261004_064459.zip

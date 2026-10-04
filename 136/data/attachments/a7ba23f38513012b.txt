@@ -1,0 +1,4 @@
+2026-10-04 06:43:51,208 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-10-04 06:43:51,301 | INFO | pages.base_page | Initializing DynamicLoadingPage with URL: https://the-internet.herokuapp.com/dynamic_loading
+2026-10-04 06:43:51,301 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/dynamic_loading/1
+2026-10-04 06:44:21,585 | INFO | conftest | Saving artifacts on failed test: gw1_test_hidden_element[chromium]_20261004_064351.png, gw1_test_hidden_element[chromium]_20261004_064351.zip
