@@ -1,0 +1,4 @@
+2026-10-05 06:47:29,267 | INFO | conftest | Artifacts dir: artifacts/chromium
+2026-10-05 06:47:29,368 | INFO | pages.base_page | Initializing LoginPage with URL: https://the-internet.herokuapp.com/login
+2026-10-05 06:47:29,368 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/login
+2026-10-05 06:47:59,651 | INFO | conftest | Saving artifacts on failed test: gw1_test_full_login_logout_valid[chromium]_20261005_064729.png, gw1_test_full_login_logout_valid[chromium]_20261005_064729.zip
