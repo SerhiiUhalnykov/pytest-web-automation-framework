@@ -1,0 +1,4 @@
+2026-10-05 06:47:39,810 | INFO | conftest | Artifacts dir: artifacts/firefox
+2026-10-05 06:47:40,840 | INFO | pages.base_page | Initializing DynamicLoadingPage with URL: https://the-internet.herokuapp.com/dynamic_loading
+2026-10-05 06:47:40,841 | INFO | pages.base_page | Opening https://the-internet.herokuapp.com/dynamic_loading/1
+2026-10-05 06:48:11,190 | INFO | conftest | Saving artifacts on failed test: gw1_test_hidden_element[firefox]_20261005_064740.png, gw1_test_hidden_element[firefox]_20261005_064740.zip
