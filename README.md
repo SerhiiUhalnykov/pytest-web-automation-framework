@@ -11,6 +11,8 @@
 
 ## Latest Published Report:
 
+> **Note:** Scheduled runs are disabled while the project is not under active maintenance. The latest published report reflects the last run.
+
 [Regression tests pipeline latest report](https://serhiiuhalnykov.github.io/pytest-web-automation-framework/)
 
 [Demo report — all Allure statuses showcase](https://serhiiuhalnykov.github.io/pytest-web-automation-framework/demo-report/)
