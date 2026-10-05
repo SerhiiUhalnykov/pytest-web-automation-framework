@@ -2,8 +2,6 @@ name: Regression night tests
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * *"
 
 permissions:
   contents: write
@@ -111,8 +109,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: demo-results
-          path:
-            demo-results
+          path: demo-results
           retention-days: 1
 
   merge_and_deploy_results:
